@@ -18,9 +18,7 @@ public class App {
     }
     public static void main(String []args){
 
-
         port(getHerokuAssignedPort());
-
 
         // root is 'src/main/resources', so put files in 'src/main/resources/public'
         staticFiles.location("/public"); // Static files
