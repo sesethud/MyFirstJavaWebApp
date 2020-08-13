@@ -12,7 +12,6 @@
 <body>
 <h1>Greet me</h1>
 
-
 <form action="/hello" method="post">
 
     <div>
@@ -34,10 +33,12 @@
     <br>
 
     <h5>{{greeting}}</h5>
+
     <div>
         <ul>
+            {{size}}
             {{#each users}}
-                <li>{{@key}} have been greeted {{this}} time(s)</li>
+                <li>{{this}} have been greeted</li>
             {{/each}}
         </ul>
     </div>
